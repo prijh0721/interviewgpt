@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>InterviewGPT 포트폴리오 | 이재환</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#ffffff; --surface:#ffffff; --muted:#6b7280; --text:#111827;
+      --primary:#2563eb; --accent:#10b981; --ring:#e5e7eb;
+      --shadow: 0 1px 2px rgba(0,0,0,.06), 0 8px 24px rgba(0,0,0,.06);
+      --pill:#f3f4f6;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;background:var(--bg);color:var(--text);font-family:Pretendard,system-ui,-apple-system,Segoe UI,Roboto,Apple SD Gothic Neo,Noto Sans KR,sans-serif;line-height:1.65}
+    a{color:var(--primary);text-decoration:none} a:hover{text-decoration:underline}
+    .wrap{max-width:1040px;margin:0 auto;padding:28px}
+    header{position:sticky;top:0;background:rgba(255,255,255,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--ring);z-index:20}
+    nav{display:flex;gap:16px;align-items:center;justify-content:space-between;max-width:1040px;margin:0 auto;padding:12px 28px}
+    .brand{font-weight:700}
+    .links a{padding:8px 12px;border-radius:10px}
+    .links a:hover{background:#f3f4f6;text-decoration:none}
+    h1{font-size:34px;margin:0 0 10px}
+    h2{font-size:24px;margin:0 0 12px}
+    h3{font-size:18px;margin:0 0 8px}
+    p{margin:8px 0} .muted{color:var(--muted)} .small{font-size:13px}
+    .section{margin:28px 0}
+    .card{background:var(--surface);border:1px solid var(--ring);border-radius:14px;padding:22px;box-shadow:var(--shadow)}
+    .grid{display:grid;gap:16px}
+    .grid.cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .grid.cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}
+    .meta{display:flex;flex-wrap:wrap;gap:8px 10px;margin:2px 0 6px}
+    .pill{font-size:12px;background:var(--pill);border:1px solid var(--ring);border-radius:999px;padding:6px 10px;color:#374151}
+    .btn{display:inline-block;padding:10px 14px;border-radius:12px;border:1px solid var(--ring);background:#f9fafb;color:#111827;text-decoration:none}
+    .shots{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+    .shot{aspect-ratio:16/10;border:2px dashed #d1d5db;border-radius:12px;display:flex;align-items:center;justify-content:center;background:#f9fafb;color:#9ca3af;font-size:14px}
+    ul{padding-left:18px;margin:6px 0}
+    footer{margin:40px 0 24px;text-align:center;color:var(--muted);font-size:14px}
+    @media (max-width: 920px){ .grid.cols-2,.grid.cols-3{grid-template-columns:1fr} nav{padding:10px 18px} .wrap{padding:22px} }
+    @media print{ header,.links,.btn{display:none!important} .card{box-shadow:none} .wrap{padding:0} }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="brand">Portfolio · 이재환</div>
+      <div class="links">
+        <a href="#about">소개</a>
+        <a href="#skills">기술스택</a>
+        <a href="#project">InterviewGPT</a>
+        <a href="#details">상세 내용</a>
+        <a href="#contact" class="btn">연락처</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="wrap">
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="card">
+        <h1>InterviewGPT – 생성형 AI 기반 면접 도우미</h1>
+        <p><b>이름:</b> 이재환</p>
+        <p><b>한 줄 소개(Hero):</b> 동양미래대학교 컴퓨터소프트웨어과 재학생</p>
+        <h3 style="margin-top:10px">About Me</h3>
+        <p class="muted">동양미래대학교 컴퓨터소프트웨어과 재학 중이며, 생성형 AI와 웹 기술을 연결하는 프로젝트를 중심으로 개발을 경험하고 있습니다. 사용자 문제를 빠르게 정의하고, 작동하는 MVP로 검증하는 흐름을 선호합니다.</p>
+        <p class="muted">이번 프로젝트 <b>InterviewGPT</b>는 AI 면접 시대에 지원자가 체감할 수 있는 정성적 피드백을 제공하자는 목표에서 출발했습니다. React와 Spring Boot, OpenAI API, MongoDB 조합으로 짧은 기간 내 실전형 프로토타입을 만드는 데 집중했습니다.</p>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <h2>전체 기술 스택 (Skills)</h2>
+      <div class="grid cols-3">
+        <div class="card"><h3>Frontend</h3><p class="muted">React, HTML, CSS, Axios</p></div>
+        <div class="card"><h3>Backend</h3><p class="muted">Java, Spring Boot, REST API</p></div>
+        <div class="card"><h3>Database</h3><p class="muted">MongoDB</p></div>
+        <div class="card"><h3>AI</h3><p class="muted">OpenAI API (Prompt Engineering)</p></div>
+        <div class="card"><h3>DevOps & Tools</h3><p class="muted">AWS EC2, Git/GitHub, Postman</p></div>
+        <div class="card"><h3>추가 도구</h3><p class="muted">—</p></div>
+      </div>
+    </section>
+
+    <!-- PROJECT OVERVIEW -->
+    <section id="project" class="section">
+      <h2>프로젝트 개요</h2>
+      <div class="card">
+        <div class="meta">
+          <span class="pill">프로젝트명: InterviewGPT – 생성형 AI 기반 면접 도우미</span>
+          <span class="pill">팀: 1인 개발</span>
+          <span class="pill">기간: 2025년 10–11월</span>
+          <span class="pill">기술: React · Spring Boot · OpenAI · MongoDB</span>
+        </div>
+        <p class="small muted">※ 아래 스크린샷 영역은 향후 이미지가 생기면 교체합니다.</p>
+      </div>
+
+      <div class="section">
+        <h3>프로젝트 스크린샷 (Placeholder)</h3>
+        <div class="card">
+          <div class="shots">
+            <div class="shot">메인 화면 자리</div>
+            <div class="shot">질문 선택 화면 자리</div>
+            <div class="shot">피드백 리포트 자리</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DETAILS -->
+    <section id="details" class="section">
+      <h2>프로젝트 상세</h2>
+
+      <div class="grid cols-2">
+        <div class="card">
+          <h3>문제 정의</h3>
+          <p>AI 면접이 확산되고 있지만, 지원자 입장에서 <b>정성적 피드백</b>을 받을 수 있는 실전형 도구가 부족합니다. 본 프로젝트는 면접 답변의 <b>논리성·전달력·자신감</b>을 자동으로 평가/가이드하여 반복 연습이 가능하도록 하는 것을 목표로 합니다.</p>
+        </div>
+        <div class="card">
+          <h3>아키텍처/설계</h3>
+          <ul>
+            <li><b>Frontend:</b> React(HTML/CSS/Axios) – 질문 선택/생성, 답변 입력, 리포트 UI</li>
+            <li><b>Backend:</b> Spring Boot – OpenAI API 연동, 평가 로직, REST 엔드포인트</li>
+            <li><b>AI:</b> OpenAI API – 답변 분석(논리·톤·자신감) 및 코칭 문장 생성</li>
+            <li><b>DB:</b> MongoDB – 사용자, 질문, 피드백 기록 저장(선택적)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="grid cols-2" style="margin-top:16px">
+        <div class="card">
+          <h3>핵심 기능 1 – 텍스트 기반 면접 피드백</h3>
+          <p>사용자의 텍스트 답변을 OpenAI에 전달해 <b>논리/전달력/자신감</b>을 점수화하고, 구체적 개선 포인트를 생성합니다. 결과는 JSON으로 받아 UI에서 시각화합니다.</p>
+        </div>
+        <div class="card">
+          <h3>핵심 기능 2 – 직무별 질문 자동 생성</h3>
+          <p>선택한 직무와 난이도를 프롬프트에 반영해 <b>맞춤 질문 세트</b>를 생성합니다. 반복 연습에 적합하도록 요약/팔로업 질문도 함께 제공합니다.</p>
+        </div>
+      </div>
+
+      <div class="grid cols-2" style="margin-top:16px">
+        <div class="card">
+          <h3>나의 역할 및 기여</h3>
+          <ul>
+            <li>React · Spring Boot · OpenAI · MongoDB 기반 <b>전체 아키텍처 설계 및 초기 세팅</b></li>
+            <li>프롬프트 설계 및 <b>평가 기준(논리/전달/자신감) 표준화</b></li>
+            <li>REST API 설계(질문 생성, 피드백 생성)와 <b>UI 리포트</b> 구현</li>
+            <li>파일럿 사용자 테스트 진행 및 개선 포인트 반영</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>결과 및 성과</h3>
+          <ul>
+            <li>파일럿 사용자 대상 <b>만족도 80%+</b> (자가 평가, 초기 테스트)</li>
+            <li>답변 구조화 및 길이 조절 등 <b>개선 체감 30%+</b></li>
+            <li>직무별 질문 세트로 <b>반복 연습 시간 단축</b> 보고</li>
+          </ul>
+          <p class="small muted">※ 정량 수치는 추후 테스트 확정 후 갱신 예정</p>
+        </div>
+      </div>
+
+      <div class="grid cols-2" style="margin-top:16px">
+        <div class="card">
+          <h3>회고 (배운 점)</h3>
+          <ul>
+            <li>프롬프트 엔지니어링을 통해 <b>일관된 평가 기준</b>을 설계하는 방법</li>
+            <li>프론트–백엔드–AI 연동 파이프라인 구성 및 데이터 포맷 결정</li>
+            <li>MVP → 사용자 피드백 → 개선의 반복 사이클 운영</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>회고 (개선점)</h3>
+          <ul>
+            <li>향후 <b>영상 표정/시선</b> 인식(OpenCV/MediaPipe) 연동</li>
+            <li>피드백 결과 저장 기반 <b>성과 추적 대시보드</b> 추가</li>
+            <li>발음/억양 등 음성 특성 분석 고도화</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <h2>연락처</h2>
+      <div class="card">
+        <p>📧 이메일: <a href="mailto:prijh0721@naver.com">prijh0721@naver.com</a></p>
+        <p>🔗 GitHub: <a href="https://github.com/prijh0721" target="_blank">github.com/prijh0721</a></p>
+        <p class="muted small">LinkedIn은 미기재</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    © 2025 이재환 · InterviewGPT Portfolio
+  </footer>
+</body>
+</html>
